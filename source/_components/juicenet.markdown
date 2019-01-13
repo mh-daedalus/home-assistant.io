@@ -8,7 +8,7 @@ comments: false
 sharing: true
 footer: true
 logo: juicenet.png
-ha_category: Hub
+ha_category: Energy
 ha_release: 0.47
 ---
 
@@ -24,6 +24,9 @@ juicenet:
     access_token: ACCESS_TOKEN
 ```
 
-Configuration variables:
-
-- **access_token** (*Required*): Your eMotorWerks API Token can be found in the [dashboard](https://dashboard.emotorwerks.com/Manage).
+{% configuration %}
+access_token:
+  description: "Your eMotorWerks API Token can be found in the [dashboard](https://dashboard.emotorwerks.com/Manage)."
+  required: true
+  type: string
+{% endconfiguration %}

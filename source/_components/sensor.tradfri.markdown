@@ -1,7 +1,7 @@
 ---
 layout: page
-title: "IKEA Trådfri sensors"
-description: "Access and control your ZigBee-based IKEA Trådfri (Tradfri) Sensors."
+title: "IKEA Trådfri Sensor"
+description: "Access and control your Zigbee-based IKEA Trådfri (Tradfri) Sensors."
 date: 2017-04-12 22.04
 sidebar: true
 comments: false

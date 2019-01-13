@@ -8,12 +8,14 @@ comments: false
 sharing: true
 footer: true
 logo: skybell.png
-ha_category: Sensor
+ha_category: Doorbell
 ha_release: 0.56
 ha_iot_class: "Cloud Polling"
 ---
 
 To get your [Skybell.com](https://skybell.com/) sensors working within Home Assistant, please follow the instructions for the general [Skybell component](/components/skybell).
+
+## {% linkable_title Configuration %}
 
 Once you have enabled the [Skybell component](/components/skybell), add the following to your `configuration.yaml` file:
 
@@ -25,7 +27,12 @@ sensor:
       - chime_level
 ```
 
-Configuration variables:
-
-- **monitored_conditions** array (*Required*): Conditions to display in the frontend. The following conditions can be monitored.
-  - **chime_level**: Return a value between 0-3, indicating no chime, low, medium, and high respectively.
+{% configuration %}
+monitored_conditions:
+  type: list
+  required: true
+  description: Conditions to display in the frontend. The following conditions can be monitored.
+  keys:
+    chime_level:
+      description: Return a value between 0-3, indicating no chime, low, medium, and high respectively.
+{% endconfiguration %}
